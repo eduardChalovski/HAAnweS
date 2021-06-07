@@ -1,5 +1,6 @@
 $( document ).ready(function() {
     let mtoken =  "bEdoZZXsDIlm";
+    let chanelList;
 
     $("h1").click(function() {
         $.ajax({
@@ -9,7 +10,10 @@ $( document ).ready(function() {
                 "X-Group-Token": mtoken
             },
             contentType: "applicatoin/json",
-            success: function(content, status) {alert(JSON.stringify(content));},
+            success: function(content, status) {
+                chanelList=JSON.parse(content);
+                alert(chanelList.)    
+            },
             error: function() {
                 alert("error yay")
             }
