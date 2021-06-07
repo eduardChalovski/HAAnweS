@@ -12,7 +12,7 @@ $( document ).ready(function() {
             contentType: "applicatoin/json",
             success: function(content, status) {
                 chanelList=JSON.parse(content);
-                alert(chanelList.)    
+                alert(chanelList[0].id)    
             },
             error: function() {
                 alert("error yay")
